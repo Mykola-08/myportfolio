@@ -1,63 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Ваше Имя - Персональный сайт</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
+<body class="bg-white text-gray-800">
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold mb-2">Ваше Имя</h1>
+            <p class="text-xl">Веб-разработчик и дизайнер</p>
+        </header>
+        
+        <nav class="mb-12">
+            <ul class="flex justify-center space-x-6">
+                <li><a href="#about" class="text-gray-600 hover:text-gray-900 transition duration-300">Обо мне</a></li>
+                <li><a href="#projects" class="text-gray-600 hover:text-gray-900 transition duration-300">Проекты</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-gray-900 transition duration-300">Контакты</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>[Your brief biography, interests, and preferences]</p>
-        </section>
-        <section id="resume">
-            <h2>Resume</h2>
-            <h3>Education</h3>
-            <p>[Details of each educational institution, dates, degrees, and certificates]</p>
-            <h3>Skills</h3>
-            <p>[List of professional and technical skills]</p>
-            <h3>Experience</h3>
-            <p>[Work experience, if any]</p>
-            <a href="resume.pdf" class="button">Download Resume as PDF</a>
-        </section>
-        <section id="hobbies">
-            <h2>Hobbies & Interests</h2>
-            <p>[Description of your hobbies and interests]</p>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <p>[Detailed list of skills with proficiency levels]</p>
-        </section>
-        <section id="education">
-            <h2>Education</h2>
-            <p>[Details of each educational institution, dates, degrees, and certificates]</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
-            <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
-            <p>Telegram: <a href="https://t.me/yourusername">@yourusername</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
-    </footer>
-    <script src="scripts.js"></script>
+        
+        <main class="space-y-12">
+            <section id="about">
+                <h2 class="text-2xl font-bold mb-4">Обо мне</h2>
+                <p class="text-gray-700">Привет! Я страстный веб-разработчик и дизайнер с острым взглядом на создание красивых, удобных для пользователя веб-сайтов. Я люблю превращать сложные проблемы в простые, элегантные решения.</p>
+            </section>
+            
+            <section id="projects">
+                <h2 class="text-2xl font-bold mb-4">Мои проекты</h2>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>Проект 1 - Краткое описание</li>
+                    <li>Проект 2 - Краткое описание</li>
+                    <li>Проект 3 - Краткое описание</li>
+                </ul>
+            </section>
+            
+            <section id="contact">
+                <h2 class="text-2xl font-bold mb-4">Свяжитесь со мной</h2>
+                <p class="text-gray-700">Не стесняйтесь обращаться ко мне: <a href="mailto:your.email@example.com" class="text-blue-600 hover:underline">your.email@example.com</a></p>
+            </section>
+        </main>
+        
+        <footer class="mt-12 text-center text-gray-600">
+            <p>&copy; 2024 Ваше Имя. Все права защищены.</p>
+        </footer>
+    </div>
 </body>
 </html>
